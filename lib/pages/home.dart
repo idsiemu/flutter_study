@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:study/components/avatar.dart';
+import 'package:study/components/card.dart';
 
 class Home extends StatelessWidget {
 
@@ -19,57 +20,15 @@ class Home extends StatelessWidget {
               children: List<Widget>.generate(20, (index) => Avatar()),
             ),
           ),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
-          Text('카드 세팅'),
+          SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                children: List<Widget>.generate(4, (index) => ICard(index: index))
+              ),
+            ),
+          )
         ],
       ),
     );
